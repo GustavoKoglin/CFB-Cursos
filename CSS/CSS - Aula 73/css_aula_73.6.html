@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 73.6</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      .header {
+        grid-area: header;
+      }
+      .principal {
+        grid-area: principal;
+      }
+      .lateral {
+        grid-area: lateral;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .conteiner {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header header"
+        "principal principal principal lateral"
+        "footer footer footer footer";
+      }
+      .item {
+        background-color: #048;
+        color: #fff;
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item header">CFB Curso 1 Header <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis dolorum perspiciatis totam rerum. Ducimus, tenetur sit, fugit quaerat ex commodi sed illum odit, blanditiis vero enim dolores neque odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni dolorum, earum qui illo soluta reprehenderit esse nisi cum sit excepturi eligendi dolore sed repellendus beatae voluptas architecto veniam magnam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, nihil numquam praesentium magnam a neque, consectetur fugiat quasi ad blanditiis modi unde amet, facilis voluptatibus dolores fugit nam omnis aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto maiores consequuntur quia nulla repellat debitis quod, rem nihil, beatae voluptatem tenetur dolorum quisquam! Sit vitae ducimus accusamus non veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nemo magni. Veritatis doloribus nam voluptas enim, architecto saepe soluta voluptatum id consectetur, molestiae quam repudiandae, atque vitae! Maiores, veritatis exercitationem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eum neque a possimus maxime? Quasi numquam exercitationem esse ab possimus culpa molestiae odit vitae. Laborum iusto aliquam natus quis. Cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis autem aliquam modi tempora dolor ducimus ullam quod ipsa veniam at quasi atque voluptas, delectus distinctio dicta enim, fugiat dolorum ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, voluptatibus corrupti reprehenderit, iure maiores veniam nam dolorem laboriosam possimus doloribus, accusamus odio enim. Aut neque eius, repudiandae quibusdam fugiat nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, labore enim illum ipsum culpa nulla hic ullam excepturi voluptatem, atque harum maxime corrupti inventore aspernatur assumenda error tempora a vero?</p></div>
+      <div class="item principal">CFB Curso 2 Principal <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi qui omnis consequatur tenetur, doloremque consequuntur optio perspiciatis accusamus assumenda doloribus sapiente voluptate reiciendis, magnam molestias ipsum quo, explicabo asperiores laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore explicabo ullam odio doloribus accusamus minus iusto magnam, placeat eius voluptatibus sapiente totam ex odit mollitia deleniti iste officia illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam alias, distinctio excepturi dignissimos harum iusto debitis delectus dicta, itaque ipsum quam quas officiis eum quod maxime incidunt non porro sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi recusandae, assumenda nesciunt aspernatur dolores voluptatibus ratione perspiciatis sint? Neque consequatur sapiente quo velit? Sit repellat cumque veniam id natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia, incidunt molestias reiciendis provident similique labore vitae. Neque beatae facere cupiditate temporibus. Provident reprehenderit cum, dicta ut fuga ullam facilis.</p></div>
+      <div class="item lateral">CFB Curso 3 Lateral <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis impedit maxime, neque molestiae, quae ad odio repellendus possimus magnam debitis? Sunt, quo molestiae nemo nisi quibusdam itaque consequuntur possimus!</p></div>
+      <div class="item footer">CFB Curso 4 Footer <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum consectetur recusandae aspernatur amet eius. Magnam neque optio veniam, reiciendis sed nihil, ut quaerat consequuntur obcaecati eligendi iste deserunt. Earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore ducimus perferendis laboriosam quas harum, aspernatur commodi ea quae alias architecto, cum soluta, earum nulla molestias voluptatum placeat et repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo molestias soluta velit, expedita sequi porro ex necessitatibus aut a minima quaerat mollitia rerum asperiores. Neque enim eaque explicabo hic voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis molestiae culpa tenetur eius dolores maiores ullam aliquid accusantium suscipit! Inventore voluptatum corporis tempore aperiam sint vero est magnam soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima sequi assumenda ab earum, non atque pariatur totam, enim illo ullam ipsam modi velit dolorem! Culpa eius excepturi cum asperiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus, consequuntur magnam architecto illo cupiditate repellat ratione, praesentium dignissimos quisquam quaerat voluptatum tenetur ex quam excepturi harum eos, eius fugiat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat alias deleniti illo earum, in enim eligendi maiores nisi qui deserunt soluta nam, sunt maxime laborum, illum ab iste fuga molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quod officiis tempore, dignissimos sint dolorum recusandae in, assumenda corporis tempora quis accusamus reprehenderit. Tenetur aliquam placeat amet, quisquam corrupti eveniet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nam veritatis neque! Non cum deleniti dignissimos eveniet, ad maiores officiis eius reiciendis error delectus id magni quidem rerum. Repudiandae, ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque delectus dignissimos saepe facere incidunt eos officia ex. Praesentium quisquam possimus quasi sit odit consequuntur et fuga rerum voluptatem optio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi at optio possimus maxime ducimus iusto dicta velit. Quisquam voluptatum cumque odio atque accusamus vitae, suscipit officia iure inventore expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aperiam fugit? Tempora vel repellat quos alias, enim dolorem. Modi adipisci repellat quaerat voluptas! Delectus totam nesciunt hic tempore minima omnis.lo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam corporis, nisi deserunt excepturi, tempore eaque pariatur quisquam aliquam, doloremque iste ipsum illo mollitia fugit nemo cumque quam provident suscipit! Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam maxime quos laudantium exercitationem reiciendis dignissimos obcaecati sapiente laborum molestias, expedita distinctio alias error natus, fugiat et animi? Sequi, voluptates adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, culpa dicta rerum officiis laborum quasi deleniti nulla voluptate modi cumque quos dolore qui maiores perferendis repellendus assumenda iusto magnam numquam.</p></div>
+    </div>
+  </body>
+</html>

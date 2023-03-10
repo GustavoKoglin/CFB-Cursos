@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>HTML - Aula 22</title>
+        <script>
+            function abrirDialog(){
+                document.getElementById("d1").setAttribute("open","")
+            }
+            function fecharDialog(){
+                document.getElementById("d1").removeAttribute("open")
+            }
+            
+        </script>
+        <style>
+            button{                
+                background-color: #000;
+                color: #fff;
+                width: 250px;
+                height: 40px;
+                border: 3px #0a0 solid;
+                border-radius: 15px;                                
+                
+            }
+
+            button:hover{
+                background-color: #f00;
+                color: #000;
+                width: 250px;
+                height: 40px;
+                border: 3px #000 solid;
+                border-radius: 15px;
+                cursor: pointer;
+                        
+            }
+            
+            dialog{
+                border-radius: 30px;
+                background-color: #bbb;
+                
+                
+            }
+
+            .btn1{
+                position: absolute;
+                margin-top: 10%;
+                margin-left: 365px;
+            }
+
+            .btn2{
+                position: absolute;
+                margin-top: 10%;
+                margin-left: 730px;
+                
+            }
+            
+        </style>
+</head>
+<body>
+    <button class="btn1" onClick="abrirDialog()">Abrir</button>
+    <button class="btn2" onClick="fecharDialog()">Fechar</button>
+    <dialog id="d1" open>
+        <p><dfn title="Linguagem de marcação para a web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+        <p><dfn><abbr title="Formatação para páginas da web">CSS</abbr></dfn> Cascading Style Sheets, recurso para adicionar estilos/formatações a um documento web.</p>
+    </dialog>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Esta aula foi uma explicação para instalação do NodeJS, sendo utilizado o conteudo da aula 1 como exemplo.")

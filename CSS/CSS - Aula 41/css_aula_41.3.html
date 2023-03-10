@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 41.3</title>
+    <style>
+      @keyframes anima {
+        0%{left: 0px;top: 0px;}
+        25%{left: 500px;top: 0px;}
+        50%{left: 500px;top: 500px;}
+        75%{left: 0px;top: 500px;}
+        100%{left: 0px;top: 0px;}
+      }
+      
+      p {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 260px;
+        height: 260px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: justify;
+        animation-name: anima; 
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio placeat sequi ex nihil impedit veniam eius aspernatur, quos sint, praesentium, iure deserunt autem accusamus maxime consectetur nobis officiis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem, quis, qui ab ipsum ad, cupiditate eos eveniet ipsa earum accusantium! Asperiores nobis natus laboriosam minima quisquam consequuntur nostrum repudiandae!</p>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: #bbb;
+    background-image: url("../imgs/img.png"), url("../imgs/Protótipo.png");
+    background-size: 200px, 305px;
+    background-repeat: no-repeat, repeat;
+    background-position: 200px 200px, 0px 0px;
+}
+
+p{
+    font-size: 30pt;
+    background-color: black;
+    color: orange;
+    background-image: url(../imgs/lampada-incandescente.png);
+    background-repeat: repeat-x;
+    background-position: 0px 8px;
+}

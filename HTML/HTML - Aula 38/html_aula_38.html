@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    
+    <title>HTML - AUla 38</title>
+
+    <style>
+        .quebra{display: block;}
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+        
+        
+    </style>
+
+ </head>
+ <body>
+
+     <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra">Selecione o arquivo:</label>
+        <input type="file" name="f_arquivo" accept=".jpg,.gif,.png" multiple>
+       
+        <label class="quebra">Digite a URL:</label>
+        <input type="url" name="f_url" placeholder="https://www.google.com">
+       
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+        
+ </body>
+ </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>CSS | Flexbox</title>
+        <style>
+
+            .item{
+                margin: 5px;
+                padding: 5px;
+                background: #447;
+                text-align: center;
+                font-size: 1em;
+                color: #fff;
+            }
+
+            .container{
+                max-width: 600px;
+                height: 400px;
+                margin: 0 auto;
+                border: 1px solid #000;
+                justify-content: center;
+                align-items: center;
+                /*align-content: center;*/
+            }
+
+            .flexivel{
+                display: flex;
+            }
+
+            .horizontal{
+                flex-direction: row;
+            }
+
+            .vertical{
+                flex-direction: column;
+            }
+
+            .quebra{
+                flex-wrap: wrap;
+            }
+
+            .tam0{
+                flex-grow: 0;
+            }
+
+            .tam1{
+                flex-grow: 1;
+            }
+
+            .tam2{
+                flex-grow: 2;
+            }
+
+            .tam3{
+                flex-grow: 3;
+            }
+
+            .basea{
+                flex-basis: auto;
+            }
+
+            .base0{
+                flex-basis: 0;
+            }
+
+            .base1{
+                flex-basis: 1;
+            }
+
+            .base2{
+                flex-basis: 2;
+            }
+
+            .base3{
+                flex-basis: 3;
+            }
+
+            .reduzir0{
+                flex-shrink: 0;
+            }
+
+            .reduzir1{
+                flex-shrink: 1;
+            }
+
+            .reduzir2{
+                flex-shrink: 2;
+            }
+
+            .reduzir3{
+                flex-shrink: 3;
+            }
+
+            p{
+                text-align: center;
+                margin: 25px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #777;
+            }
+
+            .ordem0{
+                order: 0;
+            }
+
+            .ordem1{
+                order: 1;
+            }
+
+            .ordem2{
+                order: 2;
+            }
+            .ordem3{
+                order: 3;
+            }
+
+            .flex{
+                flex: 1;
+            }
+
+            .aux{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container flexivel horizontal">
+            <div class="item flex">CFB</div>
+            <div class="item flex">CFB Cursos - Aula 12</div>
+            <div class="item flex">CFB Cursos - Curso completo de Flexbox</div>
+
+
+        </div>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML - Aula 55</title>
+    <style type="text/css">
+        iframe{
+            width: 800px;
+            height: 500px;
+            border: none;
+        }
+        #banner{
+            width: 800px;
+            height: 500px;
+            border: solidone;
+        }
+    </style>
+    <script>
+        function trocaBanner(){
+            var num=Math.floor(Math.random()*4);
+            var imgs=['b1.png', 'b2.jpg', 'b3.png', 'b4.jpg'];
+            document.getElementById("banner").src=imgs[num];
+        }
+        function iniciar(){
+            trocaBanner();
+        }
+        window.addEventListener("load", iniciar)
+    </script>
+</head>
+<body>
+    <iframe src="#" name="banner" id="banner" title="banner"></iframe>
+    <a href="html_aula_33.html" target="main">Aula 33</a>
+    <a href="https://www.cfbcursos.com.br" target="main">Site</a>
+    <a href="https://www.w3.org" target="main">W3</a>
+    <iframe src="#" name="mainr" id="banner" title="banner"></iframe>
+</body>
+</html>

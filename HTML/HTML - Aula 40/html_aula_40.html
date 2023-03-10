@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML - Aula 40</title>
+    <style>
+        .quebra{display: block;}
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+        
+        <label class="quebra espaco_t">Escolha uma cor:</label>
+        <input list="f_cores" name="f_cor">
+        <datalist id="f_cores">
+            <option value="black">Preto</option>
+            <option value="white">Branco</option>
+            <option value="yellow">Amarelo</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="purple">Roxo</option>
+            <option value="beige">Bege</option>
+        </datalist>
+
+        <label class="quebra espaco_t">Escolha uma Transporte:</label>
+        <input list="f_transportes" name="f_trsnaportes">
+        <datalist id="f_transportes">
+            <option value="01">Carro</option>
+            <option value="02">Aviao</option>
+            <option value="03">Navio</option>
+            <option value="04">Motocicleta</option>
+        </datalist>
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+        
+</body>
+</html>

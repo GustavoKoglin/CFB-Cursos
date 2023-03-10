@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>React - Aula 24</title>
+        <script>
+            function carro(){
+                let velMax=200
+                console.log(this.modelo);
+            }
+            let detalhes={
+                cor: 'Branco', marca: 'VW', modelo: 'Golf'
+            }
+            let carroLigarDetalhes=carro.bind(detalhes);
+            carroLigarDetalhes();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

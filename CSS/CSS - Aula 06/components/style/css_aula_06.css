@@ -1,0 +1,8 @@
+body{
+    background-image: url("../img/background2.png"), url("../img/background.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 300px, 30px;
+    background-attachment: scroll, fixed;
+    text-align: justify;
+    text-indent:  70px;
+}

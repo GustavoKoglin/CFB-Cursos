@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML - Aula 37</title>
+    <style>
+        .quebra{display: block;}
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra">Telefone:</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+
+        <label class="quebra">Password:</label>
+        <input type="password" name="f_senha" pattern="[a-ZA-Z0-9]{5}">
+
+        <label class="quebra">Escolha um número:</label>
+        <input type="number" name="f_numero" step="2" nin="0" max="10">
+        <label class="quebra">Pesquisa</label>
+        <input type="search" name="f_pesquisa">
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+        
+        
+    </form>
+    
+</body>
+</html>

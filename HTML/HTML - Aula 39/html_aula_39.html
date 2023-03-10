@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML - AUla 39</title>
+    <style>
+        .quebra{display: block;}
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #eee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+        <label class="quebra espaco_t">Selecione uma Cor:</label>
+        <select name="f_cor" multiple>
+            <option>Branco</option>
+            <option>Preto</option>
+            <option>Vermelho</option>
+            <option>Azul</option>
+            <option>Verde</option>
+        </select>
+        <label class="quebra espaco_t">Selecione seu sexo:</label>
+        <select name="f_sexo" multiple>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+
+        </select>
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+        
+</body>
+</html>

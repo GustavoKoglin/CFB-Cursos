@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 17.1</title>
+    <style>
+      .vermelho{
+        color: red;
+        font-size: larger;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        white-space: nowrap;
+        margin-top: 10px;
+      }
+      #d2 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        white-space: normal;
+      }
+      #d3 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        white-space: nowrap;
+        overflow: hidden; /*O texto continua existindo para fora dos parâmetros, mas está oculto*/
+      }
+      #d4 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        white-space: normal;
+        overflow: scroll;
+      }
+      #d5 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        white-space: normal;
+        overflow: auto;
+        word-break: break-all;
+      }
+      #d6 {
+
+        white-space: normal;
+        overflow: auto;
+        text-align-last: center; /*final do paragrafo pode ser esquerda, centro o padrão é direita*/
+      }
+      #d7 {
+        white-space: normal;
+        overflow: auto;
+        text-align-last: right;
+      }
+      #d8 {
+        white-space: normal;
+        overflow: auto;
+        text-align-last: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ad sequi, fugit ratione reiciendis saepe omnis quos esse magnam excepturi amet atque iure praesentium officiis placeat quam br exercitationem ipsam dicta.</p>
+    </div>
+    <div id="d2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores, laudantium et, accusamus beatae itaque quo ipsam, eveniet aliquid pariatur aspernatur molestiae iste placeat eos non minima neque quidem expedita.</p>
+    </div>
+    <div id="d3">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi autem adipisci, ut dolorum tenetur harum culpa doloribus accusantium incidunt? Molestiae, eius eaque? Odit facere nobis maxime modi? Ad, facere esse.</p>
+    </div>
+    <div id="d4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis libero nam odio dolor suscipit laudantium cumque? Minima sit quisquam incidunt sed, ratione veritatis repellendus eveniet reiciendis exercitationem mollitia tempora quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis optio, consequuntur explicabo facere sequi? Repellendus qui, a perferendis laboriosam ut doloremque obcaecati fugit, sapiente iste excepturi nulla harum mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt dolorem modi eaque sed alias similique unde eligendi excepturi voluptates. Harum est consequuntur magni fugiat dolorem aliquid reprehenderit voluptatum cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus cumque numquam facere reiciendis alias libero sint repellat, ad quaerat animi aspernatur, maxime doloribus laudantium illum, eveniet rerum laboriosam quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus temporibus quasi quas non, dolore fugiat optio ullam rem, odit in maxime, repellendus perspiciatis blanditiis placeat perferendis assumenda eveniet beatae nihil? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quae officiis nihil nostrum molestias ipsa sit nesciunt ut aut voluptate commodi soluta est exercitationem rerum sed voluptas nemo magnam veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum, maxime voluptas, quod, reprehenderit facilis consequuntur ex voluptatum nesciunt vel eum quo. Sit atque porro repellendus voluptate fugiat unde nemo?</p>
+    </div>
+    <div id="d5">
+      <p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis libero nam odio dolor suscipit laudantium cumque? Minima sit quisquam incidunt sed, ratione veritatis repellendus eveniet reiciendis exercitationem mollitia tempora quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis optio, consequuntur explicabo facere sequi? Repellendus qui, a perferendis laboriosam ut doloremque obcaecati fugit, sapiente iste excepturi nulla harum mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt dolorem modi eaque sed alias similique unde eligendi excepturi voluptates. Harum est consequuntur magni fugiat dolorem aliquid reprehenderit voluptatum cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus cumque numquam facere reiciendis alias libero sint repellat, ad quaerat animi aspernatur, maxime doloribus laudantium illum, eveniet rerum laboriosam quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus temporibus quasi quas non, dolore fugiat optio ullam rem, odit in maxime, repellendus perspiciatis blanditiis placeat perferendis assumenda eveniet beatae nihil? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quae officiis nihil nostrum molestias ipsa sit nesciunt ut aut voluptate commodi soluta est exercitationem rerum sed voluptas nemo magnam veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum, maxime voluptas, quod, reprehenderit facilis consequuntur ex voluptatum nesciunt vel eum quo. Sit atque porro repellendus voluptate fugiat unde nemo?</p>
+    </div>
+    <div id="d6">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ut facilis praesentium iusto, libero commodi animi inventore accusantium, similique, obcaecati provident. In, voluptatum facere! Corrupti vitae rerum ipsum architecto sint? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos omnis unde corporis enim, distinctio asperiores minus tempore sed ea accusamus vero repellendus dolorum in esse culpa delectus facere ipsum odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolorem dolorum. Voluptatibus molestias neque voluptas est animi dolor atque laborum officiis soluta. Molestias magnam minima fugit repudiandae quaerat necessitatibus <span class="vermelho">voluptas.</span></p>
+    </div>
+    <div id="d7">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ut facilis praesentium iusto, libero commodi animi inventore accusantium, similique, obcaecati provident. In, voluptatum facere! Corrupti vitae rerum ipsum architecto sint? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos omnis unde corporis enim, distinctio asperiores minus tempore sed ea accusamus vero repellendus dolorum in esse culpa delectus facere ipsum odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolorem dolorum. Voluptatibus molestias neque voluptas est animi dolor atque laborum officiis soluta. Molestias magnam minima fugit repudiandae quaerat necessitatibus <span class="vermelho">voluptas.</span></p>
+    </div>
+    <div id="d8">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ut facilis praesentium iusto, libero commodi animi inventore accusantium, similique, obcaecati provident. In, voluptatum facere! Corrupti vitae rerum ipsum architecto sint? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos omnis unde corporis enim, distinctio asperiores minus tempore sed ea accusamus vero repellendus dolorum in esse culpa delectus facere ipsum odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolorem dolorum. Voluptatibus molestias neque voluptas est animi dolor atque laborum officiis soluta. Molestias magnam minima fugit repudiandae quaerat necessitatibus <span class="vermelho">voluptas.</span></p>
+    </div>
+  </body>
+</html>

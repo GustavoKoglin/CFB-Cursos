@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 30</title>
+    <style>
+      section {
+        height: 200px;
+        border: 3px solid red;
+        display: flex;
+        flex-wrap: wrap;/*Quebra de linha*/
+        justify-content: flex-start;/*Alinhamento horizontal flex-start//center// flexend*/
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      div {
+        border: 1px solid black;
+        height: 50px;
+        flex: 1;
+      }
+      #d1 {
+        order: 6;
+      }
+      #d2 {
+        order: 2;
+      }
+      #d3 {
+        order: 3;
+      }
+      #d4 {
+        order: 4;
+      }
+      #d5 {
+        order: 5;
+      }
+      #d6 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="s1">
+      <div id="d1">CFB 1</div>
+      <div id="d2">CFB 2</div>
+      <div id="d3">CFB 3</div>
+      <div id="d4">CFB 4</div>
+      <div id="d5">CFB 5</div>
+      <div id="d6">CFB 6</div>
+    </section>
+  </body>
+</html>
